@@ -3,7 +3,7 @@ const app = express();
 const port = 80;
 
 app.get('/', (req, res) => {
-	res.send('Hello World!');
+	res.send({branch: 'master'});
 });
 
 app.get('/api/:id', (req, res) => {
